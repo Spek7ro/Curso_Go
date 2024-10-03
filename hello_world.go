@@ -1,10 +1,7 @@
 package main
 
 // paquete de formateo
-import (
-	"fmt"
-	"strconv"
-)
+import "fmt"
 
 func main() {
 	fmt.Println("Hello World! GO")
@@ -37,5 +34,6 @@ func main() {
 	fmt.Println("Mi int64 es:", myInt64)
 
 	fmt.Printf("%s %d", myString ,myInt) 
+
 
 }
