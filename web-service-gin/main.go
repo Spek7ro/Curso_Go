@@ -26,6 +26,20 @@ func getAlbums(c *gin.Context) {
 	c.IndentedJSON(http.StatusOK, albums)
 }
 
+// getAlbumByID locates the album whose ID value matches the id
+// parameter sent by the client, then returns that album as a response.
+func getAlbumByID(c *gin.Context) {
+    id := c.Param("id")
+
+    for _, a := range albums {
+        if a.ID == id {
+            c.IndentedJSON(http.StatusOK, a)
+            return
+        }
+    }
+    c.IndentedJSON(http.StatusNotFound, gin.H{"message": "album not found"})
+}
+
 // postAlbums adds an album from JSON received in the request body.
 func postAlbums(c *gin.Context) {
     var newAlbum album
@@ -41,7 +55,8 @@ func postAlbums(c *gin.Context) {
 func main() {
 	router := gin.Default()
 	router.GET("/albums", getAlbums)
-	router.POST("/albums", postAlbums)		
+	router.POST("/albums", postAlbums)	
+	router.GET("/albums/:id", getAlbumByID)	
 					
 	router.Run("localhost:8080")
 }
