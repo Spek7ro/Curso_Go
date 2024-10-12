@@ -64,6 +64,11 @@ func main() {
 	myString3 := "Mi String 3"
 	fmt.Println(myString3)
 
-			
+	// Constantes
+	// se usa la palabra reservada const 
+	const myConst = "Mi Constante"
+	const myConst2 = 10
+	fmt.Println("Constante 1:", myConst)
+	fmt.Println("Constante 2:", myConst2)		
 
 }
