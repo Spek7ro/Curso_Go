@@ -59,16 +59,32 @@ func main() {
 	fmt.Println("Mi bool es:", myBool)
 
 	// Operador := asignar valor a variable
-	// el operador := sirve para la declaración y 
+	// el operador := sirve para la declaración y
 	// asignación inicial de una variable
 	myString3 := "Mi String 3"
 	fmt.Println(myString3)
 
 	// Constantes
-	// se usa la palabra reservada const 
+	// se usa la palabra reservada const
 	const myConst = "Mi Constante"
 	const myConst2 = 10
 	fmt.Println("Constante 1:", myConst)
-	fmt.Println("Constante 2:", myConst2)		
+	fmt.Println("Constante 2:", myConst2)
+
+	// Control de flujo
+	myInt = 11
+	if myInt == 10 {
+		fmt.Println("myInt es 10")
+	} else if myInt == 11 {
+		fmt.Println("myInt es 11")
+	} else {
+		fmt.Println("myInt no es 10")
+	}
+
+	/*
+		Operadores
+		+ - % * / ^ & | != == < > <= >= && ||
+		+= -= *= /= %= ^= &= |=
+	*/
 
 }
