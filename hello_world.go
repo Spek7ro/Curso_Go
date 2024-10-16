@@ -87,4 +87,18 @@ func main() {
 		+= -= *= /= %= ^= &= |=
 	*/
 
+	
+	// Array por defecto se inicializa con ceros
+	var myArray [5]int 
+	myArray[0] = 1
+	myArray[1] = 2
+	myArray[2] = 3
+	fmt.Println(myArray)
+	
+	var myArray2 [5]string = [5]string{"uno", "dos", "tres", "cuatro", "cinco"}
+	fmt.Println(myArray2)
+
+	fmt.Println(myArray2[0])
+
+
 }
