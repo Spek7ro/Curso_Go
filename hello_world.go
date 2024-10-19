@@ -149,6 +149,24 @@ func main() {
 	fmt.Println(myFuntion2())
 	fmt.Println("Suma de dos numeros:",myFuntion3(10, 20))
 
+	// Estructuras (type )
+	type MyStruct struct {
+		name string
+		age int
+		city string
+	}
+
+	// Crear una instancia de la estructura
+	myStruct := MyStruct{
+		name: "Juan",
+		age: 20,
+		city: "Zacatecas",
+	}
+
+	fmt.Println(myStruct)
+
+	
+
 }
 
 // Funcion sin parametros y sin retorno
