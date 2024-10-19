@@ -132,6 +132,19 @@ func main() {
 	fmt.Println(myList.Front().Value) // El valor del primer elemento
 	fmt.Println(myList.Back().Value)  // El valor del ultimo elemento
 
+	// Bucles 
+	fmt.Println("Bucle for:")
+	for i := 0; i < len(myArray); i++ {
+		fmt.Println(myArray[i])
+	}
 
+	fmt.Println("Bucle for con range:")
+	// Imprimir el map Key/Value
+	for key,value := range myMap {
+		fmt.Println(key, value)
+	}
+
+	// Bucle for con range y index
+	for index,value := range myMap{
 
 }
