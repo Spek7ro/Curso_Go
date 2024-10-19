@@ -87,18 +87,40 @@ func main() {
 		+= -= *= /= %= ^= &= |=
 	*/
 
-	
 	// Array por defecto se inicializa con ceros
-	var myArray [5]int 
+	var myArray [5]int
 	myArray[0] = 1
 	myArray[1] = 2
 	myArray[2] = 3
 	fmt.Println(myArray)
-	
+
 	var myArray2 [5]string = [5]string{"uno", "dos", "tres", "cuatro", "cinco"}
 	fmt.Println(myArray2)
-
+	// ftm.Println(myArray2[3]) Eror: index out of range
 	fmt.Println(myArray2[0])
 
+	// Map (Key/Value) make(map[Key]Value), solos se crea 
+	myMap := make(map[string]int)
+	// Key(String) Value(int)
+	myMap["Juan"] = 20
+	myMap["Pedro"] = 30
+	myMap["Carlos"] = 82
+	// Imprimir el map
+	fmt.Println(myMap)
+	// Accesso a un valor por su key
+	fmt.Println(myMap["Juan"])
+	// Tamaño del map
+	fmt.Println(len(myMap))
+
+	// Se crea y se inicializa el map Key/Value
+	myMap2 := map[string]int{
+		"Juan":   20,
+		"Pedro":  30,
+		"Carlos": 82,
+	}
+	// Imprimir el map
+	fmt.Println(myMap2)
+
+	
 
 }
