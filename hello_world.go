@@ -2,6 +2,7 @@ package main
 
 // paquete de formateo
 import (
+	"container/list"
 	"fmt"
 	"reflect"
 )
@@ -121,6 +122,16 @@ func main() {
 	// Imprimir el map
 	fmt.Println(myMap2)
 
-	
+	// Lista (Es como una pila con punteros)
+	myList := list.New()
+	// PushBack(Value) Inserta un valor al final de la lista
+	myList.PushBack(1)
+	myList.PushBack(2)
+	myList.PushBack(3)
+	// fmt.Println(myList[1]) No puedo acceder al valor por su indice
+	fmt.Println(myList.Front().Value) // El valor del primer elemento
+	fmt.Println(myList.Back().Value)  // El valor del ultimo elemento
+
+
 
 }
