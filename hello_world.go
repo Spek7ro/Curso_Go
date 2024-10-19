@@ -144,7 +144,25 @@ func main() {
 		fmt.Println(key, value)
 	}
 
-	// Bucle for con range y index
-	for index,value := range myMap{
+	// Funciones
+	myFuntion()
+	fmt.Println(myFuntion2())
+	fmt.Println("Suma de dos numeros:",myFuntion3(10, 20))
 
 }
+
+// Funcion sin parametros y sin retorno
+func myFuntion() {
+	fmt.Println("Mi funcion")
+}
+
+// Retorna un string
+func myFuntion2() string {
+	return "Mi funcion 2"
+}
+
+// Funmcion con parametros y retorno
+func myFuntion3(a int, b int) int {
+	return a + b
+}
+
